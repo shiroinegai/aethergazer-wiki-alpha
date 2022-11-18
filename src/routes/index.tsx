@@ -1,9 +1,14 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead, Link } from "@builder.io/qwik-city";
 import { Header } from "~/components/header/header";
 
 export default component$(() => {
-  return <Header>Welcome to the Aether Gazer Wiki!</Header>;
+  return (
+    <>
+      <Header>Welcome to the Aether Gazer Wiki!</Header>
+      <Link href="/modifiers/poseidon">Click here for Poseidon example</Link>
+    </>
+  );
 });
 
 export const head: DocumentHead = {

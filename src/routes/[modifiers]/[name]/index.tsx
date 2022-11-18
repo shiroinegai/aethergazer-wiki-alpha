@@ -1,11 +1,19 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
-// import css, { and other relevant styles } from "./componentName.css";
+import { component$ } from "@builder.io/qwik";
+import { ModifierInfo } from "./modifier-info";
 
 export default component$(() => {
-  // useStyles$(css);
   return (
-    <div>
-      <Slot />
-    </div>
+    <article>
+      <ModifierInfo
+        name="Poseidon"
+        suit="Tidal Song"
+        grade="A"
+        combatStyle="Ranged"
+        height={164}
+        weight={55}
+        dateAwakened="March 21st"
+        affiliation="Aether Gazer"
+      />
+    </article>
   );
 });

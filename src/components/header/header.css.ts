@@ -1,13 +1,13 @@
 import { style } from '@vanilla-extract/css'
-import { font } from '~/global.css'
-import { sprinkles } from '../../sprinkles.css'
+import { mono, casual, weight, slant, cursive, size_3xl, space_4xs_3xs } from '~/global.css'
 
-export default 'CSS compilation target'
+export default ''
 
-export const header = style([
-  sprinkles({
-    fontSize: '2xl',
-    padding: 'xl-2xl',
-  }),
-  font({style: 'mono'})
-]) 
+export const header = style({
+  vars: {
+    [weight]: `"wght" 840`
+  },
+  fontVariationSettings: `${mono}, ${casual}, ${weight}, ${slant}, ${cursive}`,
+  fontSize: `${size_3xl}`,
+  letterSpacing: `${space_4xs_3xs}`
+})

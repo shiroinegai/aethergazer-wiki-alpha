@@ -6,10 +6,10 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 import "the-new-css-reset/css/reset.css";
-import globalCSS, { font } from "./global.css";
+import style, { global } from "./global.css";
 
 export default component$(() => {
-  useStyles$(globalCSS);
+  useStyles$(style);
 
   /**
    * The root of a QwikCity site always start with the <QwikCity> component,
@@ -25,7 +25,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class={font({ style: "mono" })}>
+      <body lang="en" class={global}>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

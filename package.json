@@ -27,21 +27,15 @@
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
-    "@vanilla-extract/integration": "^6.0.0",
-    "@vanilla-extract/vite-plugin": "^3.6.1",
-    "eslint": "8.27.0",
+    "@vanilla-extract/css": "^1.9.2",
+    "eslint": "8.28.0",
     "eslint-plugin-qwik": "0.13.3",
     "node-fetch": "3.3.0",
-    "outdent": "^0.8.0",
     "prettier": "2.7.1",
-    "typescript": "4.8.4",
-    "vite": "3.2.3",
+    "qwik-styled-ve": "^0.3.1",
+    "the-new-css-reset": "^1.7.3",
+    "typescript": "4.9.3",
+    "vite": "3.2.4",
     "vite-tsconfig-paths": "3.5.2"
-  },
-  "dependencies": {
-    "@vanilla-extract/css": "^1.9.1",
-    "@vanilla-extract/recipes": "^0.2.5",
-    "@vanilla-extract/sprinkles": "^1.5.0",
-    "the-new-css-reset": "^1.7.3"
   }
 }
